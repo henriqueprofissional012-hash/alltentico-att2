@@ -18,7 +18,6 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -115,7 +114,7 @@
       display: flex; flex-direction: column; align-items: flex-end; text-align: right;
     }
     #hero.hero3 h2 {
-      font-family: "IBM Plex Sans", "Montserrat", sans-serif; font-weight: 600;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 700;
       font-size: clamp(32px, 4.6vw, 54px); line-height: 1.16; letter-spacing: -.005em;
       color: #fff; margin: 0 0 32px 0; max-width: 540px;
       text-shadow: 0 4px 24px rgba(0,0,0,.5);
@@ -144,13 +143,18 @@
     #hero.hero3 .hero3-link:hover { opacity: 1; color: #fa5ac8; }
     @keyframes hero3up { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: translateY(0); } }
     @media (max-width: 991px) {
-      #hero.hero3 { padding-top: 120px; }
+      #hero.hero3 { padding-top: 0; align-items: flex-start; }
       #hero.hero3 .hero3-bgphoto { width: 100%; -webkit-mask-image: none; mask-image: none; }
-      #hero.hero3 .hero3-bgphoto img { object-position: 60% 12%; }
+      #hero.hero3 .hero3-bgphoto img { object-position: 50% 0%; }
       #hero.hero3 .hero3-scrim {
-        background: linear-gradient(180deg, rgba(16,5,17,.2) 0%, rgba(16,5,17,.55) 45%, rgba(12,4,14,.92) 78%, rgba(10,3,12,.97) 100%);
+        background: linear-gradient(180deg, rgba(16,5,17,0) 0%, rgba(16,5,17,0) 55%, #100510 70%);
       }
-      #hero.hero3 .hero3-wrap { align-items: center; text-align: center; padding: 0 20px; }
+      #hero.hero3 .hero3-wrap {
+        align-items: center; text-align: center;
+        padding: 28px 20px 40px; margin-top: 66vh;
+        background: #100510; border-radius: 28px 28px 0 0;
+        box-shadow: 0 -20px 40px rgba(0,0,0,.4);
+      }
       #hero.hero3 h2 { max-width: 100%; }
       #hero.hero3 .hero3-ctas { justify-content: center; }
     }
